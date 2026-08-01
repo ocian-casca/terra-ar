@@ -1,13 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Projeto Terra</title>
+    <meta charset="UTF-8">
+    <title>Model Viewer</title>
+
+    <!-- Importa o componente -->
+    <script type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js">
+    </script>
+
+    <style>
+        body{
+            margin:0;
+            background:#222;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        model-viewer{
+            width:800px;
+            height:600px;
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>Planeta Terra em Realidade Aumentada</h1>
-
-<p>Projeto desenvolvido pelos alunosvxcvx.</p>
+<model-viewer
+    src="PAINEL SOLAR.glb"
+    alt="Meu modelo 3D"
+    camera-controls
+    auto-rotate
+    shadow-intensity="1">
+</model-viewer>
 
 </body>
 </html>
